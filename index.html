@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form class="form">
+            <p class="amount">Amount:</p>
+            <input type="text" id="amount">
+            
+            <select id="currency-1" required>
+                <option>UZS</option>
+                <option>EUR</option>
+                <option>USD</option>
+            </select>
+            
+            <p class="to">to</p>
+            <select id="currency-2" required>
+                <option>EUR</option>
+                <option>USD</option>
+                <option>UZS</option>
+            </select>
+            
+            <button class="calculate-btn">RESULT</button>
+        </form>
+        <div class="result">
+            <p>
+                <span class="given-amount"></span> 
+                <span class="base-currency"></span>
+                <span class="final-result"></span> 
+                <span class="second-currency"></span>
+            </p>
+        </div>
+    </div> 
+
+    <script src="./script.js"></script>
+</body>
+</html>
